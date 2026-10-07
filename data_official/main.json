@@ -1,0 +1,31 @@
+{
+  "num_AP": 4,
+  "num_fingerprint": 1000,
+  "num_test_positions": 1000,
+  "metrics": {
+    "Nearest AP": {
+      "MAE": 4.893495035371772,
+      "RMSE": 5.418234023950129,
+      "Median": 4.863948385713568,
+      "Accuracy_1m": 2.8000000000000003,
+      "Accuracy_2m": 11.3,
+      "Accuracy_3m": 25.5
+    },
+    "Weighted Centroid": {
+      "MAE": 2.8101583839426767,
+      "RMSE": 3.0631121602890174,
+      "Median": 2.778396285628755,
+      "Accuracy_1m": 7.000000000000001,
+      "Accuracy_2m": 25.8,
+      "Accuracy_3m": 56.89999999999999
+    },
+    "KNN (K=3)": {
+      "MAE": 1.802550835804627,
+      "RMSE": 2.1068059661206506,
+      "Median": 1.5737597733120618,
+      "Accuracy_1m": 25.2,
+      "Accuracy_2m": 64.9,
+      "Accuracy_3m": 87.6
+    }
+  }
+}
