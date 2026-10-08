@@ -91,11 +91,11 @@ $$
 
 where:
 
-* \(RSSI(d_0)\) — reference RSSI
-* \(d_0\) — reference distance
-* \(n\) — path-loss exponent
-* \(X_\sigma\) — Gaussian RSSI noise
-* \(\sigma\) — noise standard deviation
+* $RSSI(d_0)$ — reference RSSI
+* $d_0$ — reference distance
+* $n$ — path-loss exponent
+* $X_\sigma$ — Gaussian RSSI noise
+* $\sigma$ — noise standard deviation
 
 The noise is modeled as:
 
@@ -103,7 +103,7 @@ $$
 X_\sigma \sim \mathcal{N}(0,\sigma^2).
 $$
 
-This allows the simulation to reproduce increasingly variable RSSI measurements by changing \(\sigma\).
+This allows the simulation to reproduce increasingly variable RSSI measurements by changing $\sigma$.
 
 ---
 
@@ -111,16 +111,16 @@ This allows the simulation to reproduce increasingly variable RSSI measurements 
 
 | Parameter             |              Value |
 | --------------------- | -----------------: |
-| Indoor area           | \(20 \times 20\) m |
+| Indoor area           |   $20 \times 20$ m |
 | Number of APs         |                  4 |
 | Reference RSSI        |            −40 dBm |
 | Reference distance    |                1 m |
 | Path-loss exponent    |                3.0 |
-| RSSI noise \(\sigma\) |               2 dB |
+| RSSI noise $\sigma$   |               2 dB |
 | Test positions        |               1000 |
-| KNN \(K\)             |                  3 |
+| KNN $K$               |                  3 |
 
-The four access points are randomly positioned such that each AP occupies a different sub-region of the simulated environment. User positions are randomly generated throughout the \(20\times20\) m area.
+The four access points are randomly positioned such that each AP occupies a different sub-region of the simulated environment. User positions are randomly generated throughout the $20\times20$ m area.
 
 ---
 
@@ -182,7 +182,7 @@ The implementation evaluates:
 The threshold-based accuracy can be expressed as:
 
 $$
-Accuracy(r) = \frac{\#\{e_i\leq r\}}{M}\times100.
+Accuracy(r) = \frac{\\#\{e_i\leq r\}}{M}\times100.
 $$
 
 These metrics provide both an overall measure of localization accuracy and a view of the distribution of individual localization errors.
