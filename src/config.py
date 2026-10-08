@@ -33,4 +33,4 @@ class SimulationConfig:
     epsilon: float = 1e-6
 
     # Simulation testing
-    testing = True
+    testing = False

@@ -37,5 +37,6 @@ plt.grid(True, alpha=0.3)
 plt.legend()
 plt.tight_layout()
 plt.savefig((DATA_PATH) / 'ap_effect.png', dpi=600)
+plt.savefig((DATA_PATH) / 'pdf/ap_effect.pdf')
 
 json.dump(output, open(DATA_PATH / 'ap_effect.json', 'w'), indent=2)

@@ -37,5 +37,6 @@ plt.grid(True, alpha=0.3)
 plt.legend()
 plt.tight_layout()
 plt.savefig(DATA_PATH / 'noise_effect.png', dpi=600)
+plt.savefig(DATA_PATH / 'pdf/noise_effect.pdf')
 
 json.dump(output, open(DATA_PATH / 'noise.json', 'w'), indent=2)

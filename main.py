@@ -41,24 +41,31 @@ def main():
         indent=2
     )
 
-    plot_environment(
+    fig = plot_environment(
         access_points,
         test_positions,
         config.area_width,
         config.area_height
-    ).savefig(DATA_PATH / 'environment.png', dpi=600)
+    )
+    fig.savefig(DATA_PATH / 'environment.png', dpi=600)
+    fig.savefig(DATA_PATH / 'pdf/environment.pdf')
+
 
     for method, data in results.items():
-        plot_actual_vs_estimated(
+        fig = plot_actual_vs_estimated(
             test_positions,
             data["positions"],
             access_points,
             method,
             config.area_width,
             config.area_height,
-        ).savefig(DATA_PATH / f'estimated_{method}.png', dpi=600)
+        )
+        fig.savefig(DATA_PATH / f'estimated_{method}.png', dpi=600)
+        fig.savefig(DATA_PATH / f'pdf/estimated_{method}.pdf')
 
-    plot_error_cdf(results).savefig(DATA_PATH / 'cumulative_error.png', dpi=600)
+    fig = plot_error_cdf(results)
+    fig.savefig(DATA_PATH / 'cumulative_error.png', dpi=600)
+    fig.savefig(DATA_PATH / 'pdf/cumulative_error.pdf')
 
 
 if __name__ == "__main__":
