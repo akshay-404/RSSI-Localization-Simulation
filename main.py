@@ -3,6 +3,7 @@ Main entry point for the baseline Wi-Fi RSSI localization project.
 """
 
 import json
+import matplotlib.pyplot as plt
 from pathlib import Path
 from src.config import SimulationConfig
 from src.simulation import run_baseline_simulation
@@ -11,6 +12,8 @@ from src.visualization import (
     plot_actual_vs_estimated,
     plot_error_cdf
 )
+
+plt.rcParams.update({'font.size': 12})
 
 config = SimulationConfig()
 

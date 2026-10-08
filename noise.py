@@ -8,6 +8,8 @@ from pathlib import Path
 from src.simulation import run_baseline_simulation
 from src.config import SimulationConfig
 
+plt.rcParams.update({'font.size': 12})
+
 ROOT = lambda x: Path(__file__).resolve().parents[x]
 DATA_PATH = ROOT(0) / ('data_testing' if SimulationConfig.testing else 'data_official')
 
