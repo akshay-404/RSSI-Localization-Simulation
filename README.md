@@ -195,14 +195,6 @@ These metrics provide both an overall measure of localization accuracy and a vie
 RSSI-Localization-Simulation/
 |
 ├── data_official
-│   ├── pdf
-│   │   ├── ap_effect.pdf
-│   │   ├── cumulative_error.pdf
-│   │   ├── environment.pdf
-│   │   ├── estimated_KNN (K=3).pdf
-│   │   ├── estimated_Nearest AP.pdf
-│   │   ├── estimated_Weighted Centroid.pdf
-│   │   └── noise_effect.pdf
 │   ├── ap_effect.json
 │   ├── ap_effect.png
 │   ├── cumulative_error.png
