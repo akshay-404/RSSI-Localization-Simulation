@@ -215,7 +215,7 @@ RSSI-Localization-Simulation/
 │   ├── metrics.py
 │   ├── rssi.py
 │   ├── simulation.py
-│   └──visualization.py
+│   └── visualization.py
 │   
 ├── main.py
 ├── noise.py
@@ -244,9 +244,9 @@ These visualizations are used to analyze both the spatial behavior and statistic
 
 ---
 
-## Technologies Used
+## Tech Stack 
 
-| Technology     | Purpose                                    |
+| Library/Framework | Purpose                                    |
 | -------------- | ------------------------------------------ |
 | Python 3.10.12 | Core implementation                        |
 | NumPy          | Numerical computation and RSSI simulation  |
