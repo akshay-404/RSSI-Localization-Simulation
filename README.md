@@ -208,7 +208,7 @@ RSSI-Localization-Simulation/
 │   └── rssi_fingerprint.csv
 │
 ├── src
-│   ├── __init.py__
+│   ├── __init__.py
 │   ├── config.py
 │   ├── environment.py
 │   ├── localization.py
